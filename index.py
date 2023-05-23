@@ -1,12 +1,17 @@
-prefeito = [
-    # nome, numero, partido, votos
-    ["Marcelo", 20, "P2", 19],
-    ["Grazi", 30, "P3", 19],
-    ["Andre", 10, "P1", 20]
+# Aqui é o MENU de opções
+# Aqui é o MENU de opções
+# Aqui é o MENU de opções
+# Aqui é o MENU de opções
+# Aqui é o MENU de opções
+# Aqui é o MENU de opções
+# Aqui é o MENU de opções
+prefeito= input("Insira os candidatos à Prefeitura:")
+governador = input("Insira os candidatos ao Governo do Estado:")
+presidente = input("Insira os candidatos à Presidência:")
+listaPrefeitos = [
+    [prefeito]
 ]
 
-# ordenar por quem recebeu mais votos. voto esta na
-# posicao 3 da minha lista
 prefeito.sort(reverse=True, key= lambda x : x[3])
 
 def imprime_tabela(lista, cargo, totalVotos=58, v1=200) :
@@ -38,4 +43,4 @@ def imprime_tabela(lista, cargo, totalVotos=58, v1=200) :
 
 imprime_tabela(prefeito, "PRESIDENTE")
 imprime_tabela(prefeito, "GOVERNADOR")
-imprime_tabela(prefeito, "prefeITO")
+imprime_tabela(prefeito, "PREFEITO")
